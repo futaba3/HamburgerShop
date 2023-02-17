@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisy's Burger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fuzzy+Bubbles:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="bg-swicher">
+        <h1>Daisy's Burger</h1>
+    </header>
+    <section id="about">
+        <!-- <input type="button" value="click" onclick="onButtonClick();"> -->
+        <div class="this" id="fadein">
+            <p class="heading about-title">Welcome!</p>
+            <p>
+                デイジーのハンバーガーショップへようこそ！<br>
+                「Daisy's Burger」はひとつひとつの食材にこだわったハンバーガーショップです。<br>
+                ぜひごゆっくりお楽しみください！<br>
+            </p>
+        </div>
+    </section>
+    <section id="bg-fixed"></section>
+    <section id="limited">
+        <h2 class="heading">Limited</h2>
+        <p class="subheading">期間限定</p>
+        <div class="slider">
+            <div>
+                <img src="images/burger1.png" alt="" class="slide-img">
+                <div class="slide-box">
+                    <h3 class="slide-title">スペシャルバーガー</h3>
+                    <p class="slide-tag">期間限定</p>
+                    <p class="slide-text">
+                        パティのボリュームが倍になったスペシャルバーガーが期間限定で登場！
+                        食べ応え抜群で、満足度の高いハンバーガーです。
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="images/burger2.png" alt="" class="slide-img">
+                <div class="slide-box">
+                    <h3 class="slide-title">からあげバーガー</h3>
+                    <p class="slide-tag">新登場</p>
+                    <p class="slide-text">
+                        はみ出るほどに大きなからあげをサンドしたハンバーガーが新登場！
+                        シンプルなマヨネーズソースで間違いない美味しさです。
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="images/burger3.png" alt="" class="slide-img">
+                <div class="slide-box">
+                    <h3 class="slide-title">フルーツバーガー</h3>
+                    <p class="slide-tag">季節限定</p>
+                    <p class="slide-text">
+                        パイナップルにマンゴー、ブルーベリーの旬のフルーツと生クリームをサンドした、デザートバーガーが季節限定で登場！
+                        すてきなおやつタイムにいかが？
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="images/burger4.jpg" alt="" class="slide-img">
+                <div class="slide-box">
+                    <h3 class="slide-title">照り焼きチキンバーガー</h3>
+                    <p class="slide-tag">数量限定</p>
+                    <p class="slide-text">
+                        チキンバーガーが数量限定で登場！
+                        1日の数量に限りがありますので、お早めに！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <h2 class="heading">MENU</h2>
+        <p class="subheading">メニュー</p>
+        <div class="food">
+            <div class="food-box">
+                <img src="images/burger4.jpg" alt="" class="food-box-img">
+                <p class="food-box-name">ハンバーガー</p>
+                <p class="food-box-price">￥500</p>
+            </div>
+            <div class="food-box">
+                <img src="images/burger5.jpg" alt="" class="food-box-img">
+                <p class="food-box-name">チーズバーガー</p>
+                <p class="food-box-price">￥550</p>
+            </div>
+            <div class="food-box">
+                <img src="images/burger6.jpg" alt="" class="food-box-img">
+                <p class="food-box-name">チキンクリスプバーガー</p>
+                <p class="food-box-price">￥500</p>
+            </div>
+            <div class="food-box">
+                <img src="images/burger7.jpg" alt="" class="food-box-img">
+                <p class="food-box-name">エッグチーズバーガー</p>
+                <p class="food-box-price">￥400</p>
+            </div>
+        </div>
+        <div class="open-food-box">
+            <div class="food">
+                <div class="food-box">
+                    <img src="images/burger8.jpg" alt="" class="food-box-img">
+                    <p class="food-box-name">ベーコンエッグバーガー</p>
+                    <p class="food-box-price">￥550</p>
+                </div>
+                <div class="food-box">
+                    <img src="images/burger9.jpg" alt="" class="food-box-img">
+                    <p class="food-box-name">とんかつバーガー</p>
+                    <p class="food-box-price">￥600</p>
+                </div>
+                <div class="food-box">
+                    <img src="images/burger10.jpg" alt="" class="food-box-img">
+                    <p class="food-box-name">えびアボカドバーガー</p>
+                    <p class="food-box-price">￥600</p>
+                </div>
+                <div class="food-box">
+                    <img src="images/burger11.jpg" alt="" class="food-box-img">
+                    <p class="food-box-name"></p>ダブルチーズバーガー</p>
+                    <p class="food-box-price">￥650</p>
+                </div>
+            </div>
+        <div class="drink-food-box">
+            <h3 class="drink-title">Drink</h3>
+            <table>
+                <thead>
+                    <tr class="drink-head">
+                        <th class="drink-menu">メニュー</th>
+                        <th>Small</th>
+                        <th>Tall</th>
+                        <th>Grande</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="drink-menu">ブレンドコーヒー</td>
+                        <td>￥300</td>
+                        <td>￥400</td>
+                        <td>￥500</td>
+                    </tr>
+                    <tr>
+                        <td class="drink-menu">ブラジル</td>
+                        <td>￥300</td>
+                        <td>￥400</td>
+                        <td>￥500</td>
+                    </tr>
+                    <tr>
+                        <td class="drink-menu">グアテマラ</td>
+                        <td>￥300</td>
+                        <td>￥400</td>
+                        <td>￥500</td>
+                    </tr>
+                    <tr>
+                        <td class="drink-menu">キリマンジャロ</td>
+                        <td>￥300</td>
+                        <td>￥400</td>
+                        <td>￥500</td>
+                    </tr>
+                    <tr>
+                        <td class="drink-menu">マンデリン</td>
+                        <td>￥300</td>
+                        <td>￥400</td>
+                        <td>￥500</td>
+                    </tr>
+                    <tr>
+                        <td class="drink-menu">グアテマラフレンチ</td>
+                        <td>￥300</td>
+                        <td>￥400</td>
+                        <td>￥500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="more-drink-button">drink</p>
+    </div>
+    <p class="more-food-button">more</p>
+    </section>
+</body>
+
+</html>
