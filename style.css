@@ -3,6 +3,39 @@
     margin: 0;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* 親要素をはみ出した時幅や高さにborderやpaddingを含ませる */
+    box-sizing: border-box;
+}
+
+.nav-logo {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
 .bg-swicher {
     width: 100vw;
     height: 100vh;
@@ -233,4 +266,37 @@ thead {
 	100% {
 		opacity: 0;
 	}
+}
+
+#access {
+    background-color: #faedc6;
+    padding: 100px 0;
+}
+
+.access-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.access-box {
+    margin-left: 50px;
+}
+
+.access-box-title {
+    font-weight: bold;
+}
+
+.access-box-text {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #fabb51;
+    padding: 20px 0;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
 }

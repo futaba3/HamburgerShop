@@ -58,9 +58,8 @@ $(function($) {
 
     $(".modal-button").modaal();
 
-
     const slideimg_src = ['images/slider4.jpg', 'images/slider1.jpg', 'images/slider2.jpg', 'images/slider3.jpg'];
-    let number = -1;
+    var number = -1;
     function slideshow_timer() {
         if (number === 3) {
             number = 0;
@@ -70,6 +69,17 @@ $(function($) {
         document.getElementById("slideshow").src = slideimg_src[number];
     }
     setTimeout("slideshow_timer()", 4000);
-    // setInterval(slideshow_timer, 4000);
+    
+    $('nav a[href^="#"]').click(function() {
+        var adjust = 40;
+        var speed = 600;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top - adjust;
+        $('body,html').animate({
+            scrollTop: position
+        }, speed, 'swing');
+        return false;
+    });
 
 });
