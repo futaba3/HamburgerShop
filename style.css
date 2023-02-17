@@ -181,3 +181,56 @@ thead {
 .drink-menu {
     text-align: left;
 }
+
+#news {
+    padding: 100px 0;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.banner {
+    width: 400px;
+}
+
+.modal-box {
+    margin: 0 20px;
+    align-self: center;
+}
+
+.modaal-content-container {
+    text-align: center;
+}
+
+.modaal-close:focus:after,
+.moddal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+    background: #fabb51;
+}
+
+#slideshow {
+    animation: imgfade 4s infinite;
+    opacity: 0;
+}
+
+@keyframes imgfade {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

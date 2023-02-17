@@ -14,10 +14,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="slick.css">
     <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="modaal.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="js/jquery.bgswitcher.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/modaal.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 
@@ -26,7 +28,6 @@
         <h1>Daisy's Burger</h1>
     </header>
     <section id="about">
-        <!-- <input type="button" value="click" onclick="onButtonClick();"> -->
         <div class="this" id="fadein">
             <p class="heading about-title">Welcome!</p>
             <p>
@@ -135,60 +136,97 @@
                     <p class="food-box-price">￥650</p>
                 </div>
             </div>
-        <div class="drink-food-box">
-            <h3 class="drink-title">Drink</h3>
-            <table>
-                <thead>
-                    <tr class="drink-head">
-                        <th class="drink-menu">メニュー</th>
-                        <th>Small</th>
-                        <th>Tall</th>
-                        <th>Grande</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="drink-menu">ブレンドコーヒー</td>
-                        <td>￥300</td>
-                        <td>￥400</td>
-                        <td>￥500</td>
-                    </tr>
-                    <tr>
-                        <td class="drink-menu">ブラジル</td>
-                        <td>￥300</td>
-                        <td>￥400</td>
-                        <td>￥500</td>
-                    </tr>
-                    <tr>
-                        <td class="drink-menu">グアテマラ</td>
-                        <td>￥300</td>
-                        <td>￥400</td>
-                        <td>￥500</td>
-                    </tr>
-                    <tr>
-                        <td class="drink-menu">キリマンジャロ</td>
-                        <td>￥300</td>
-                        <td>￥400</td>
-                        <td>￥500</td>
-                    </tr>
-                    <tr>
-                        <td class="drink-menu">マンデリン</td>
-                        <td>￥300</td>
-                        <td>￥400</td>
-                        <td>￥500</td>
-                    </tr>
-                    <tr>
-                        <td class="drink-menu">グアテマラフレンチ</td>
-                        <td>￥300</td>
-                        <td>￥400</td>
-                        <td>￥500</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="drink-food-box">
+                <h3 class="drink-title">Drink</h3>
+                <table>
+                    <thead>
+                        <tr class="drink-head">
+                            <th class="drink-menu">メニュー</th>
+                            <th>Small</th>
+                            <th>Tall</th>
+                            <th>Grande</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="drink-menu">ブレンドコーヒー</td>
+                            <td>￥300</td>
+                            <td>￥400</td>
+                            <td>￥500</td>
+                        </tr>
+                        <tr>
+                            <td class="drink-menu">ブラジル</td>
+                            <td>￥300</td>
+                            <td>￥400</td>
+                            <td>￥500</td>
+                        </tr>
+                        <tr>
+                            <td class="drink-menu">グアテマラ</td>
+                            <td>￥300</td>
+                            <td>￥400</td>
+                            <td>￥500</td>
+                        </tr>
+                        <tr>
+                            <td class="drink-menu">キリマンジャロ</td>
+                            <td>￥300</td>
+                            <td>￥400</td>
+                            <td>￥500</td>
+                        </tr>
+                        <tr>
+                            <td class="drink-menu">マンデリン</td>
+                            <td>￥300</td>
+                            <td>￥400</td>
+                            <td>￥500</td>
+                        </tr>
+                        <tr>
+                            <td class="drink-menu">グアテマラフレンチ</td>
+                            <td>￥300</td>
+                            <td>￥400</td>
+                            <td>￥500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="more-drink-button">drink</p>
         </div>
-        <p class="more-drink-button">drink</p>
-    </div>
-    <p class="more-food-button">more</p>
+        <p class="more-food-button">more</p>
+    </section>
+
+    <section id="news">
+        <h2 class="heading">NEWS</h2>
+        <p class="subheading">ニュース</p>
+        <div class="modal">
+            <div class="modal-box">
+                <a href="#news1" class="modal-button">
+                    <img src="images/banner1.jpg" alt="" class="banner">
+                </a>
+            </div>
+            <div id="news1" style="display: none;" class="news">
+                <img src="images/banner1.jpg" alt="" class="banner">
+                <h3>モバイルオーダーシステムがスタートしました</h3>
+                <p>モバイルオーダーを使えばスムーズにお受け取りいただくことができます。</p>
+            </div>
+            <div class="modal-box">
+                <a href="#news2" class="modal-button">
+                    <img src="images/banner2.jpg" alt="" class="banner">
+                </a>
+            </div>
+            <div id="news2" style="display: none;" class="news">
+                <img src="images/banner2.jpg" alt="" class="banner">
+                <h3>オープン記念セール開催中です</h3>
+                <p>全品10%OFFになっています。この機会にぜひご来店ください！</p>
+            </div>
+            <div class="modal-box">
+                <a href="#news3" class="modal-button">
+                    <img src="images/slider4.jpg" alt="" class="banner">
+                </a>
+            </div>
+            <div id="news3" style="display: none;" class="news">
+                <img decoding="async" src="images/slider4.jpg" alt="" id="slideshow" class="banner">
+                <h3>新商品アイデア募集中です</h3>
+                <p>みなさまから新商品のアイデアを募集しております。詳しくはスタッフまで！</p>
+            </div>
+        </div>
     </section>
 </body>
 

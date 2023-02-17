@@ -55,4 +55,21 @@ $(function($) {
             $(this).css('color', '#fff');
         }
     });
+
+    $(".modal-button").modaal();
+
+
+    const slideimg_src = ['images/slider4.jpg', 'images/slider1.jpg', 'images/slider2.jpg', 'images/slider3.jpg'];
+    let number = -1;
+    function slideshow_timer() {
+        if (number === 3) {
+            number = 0;
+        } else {
+            number ++;
+        }
+        document.getElementById("slideshow").src = slideimg_src[number];
+    }
+    setTimeout("slideshow_timer()", 4000);
+    // setInterval(slideshow_timer, 4000);
+
 });
